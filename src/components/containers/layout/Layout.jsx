@@ -6,10 +6,12 @@ import { Footer } from '../footer/Footer';
 
 export const Layout = () => {
     return (
-        <>
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
             <Header />
-            <Outlet />
+            <div className='main content'>
+                <Outlet />
+            </div>
             <Footer />
-        </>
+        </div>
     );
 };
