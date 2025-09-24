@@ -10,14 +10,16 @@
         "react": "^19.1.1",
         "react-dom": "^19.1.1",
         "react-router-dom": "^7.9.1",
-        "react-scripts": "5.0.1",
+        "react-scripts": "^0.0.0",
         "web-vitals": "^2.1.4"
     },
     "scripts": {
         "start": "react-scripts start ",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "eject": "reac  t-scripts eject",
+        "lint": "eslint --fix",
+        "prepare": "husky"
     },
     "eslintConfig": {
         "extends": [
@@ -36,5 +38,16 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.36.0",
+        "eslint": "^8.57.1",
+        "eslint-plugin-react": "^7.37.5",
+        "globals": "^16.4.0",
+        "husky": "^9.1.7",
+        "lint-staged": "^16.2.0"
+    },
+    "lint-staged": {
+        "*.js,.jsx": "eslint"
     }
 }
