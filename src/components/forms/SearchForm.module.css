@@ -1,0 +1,7 @@
+.searchForm {
+    display: flex;
+    height: 40px;
+    max-width: 100%;
+    align-items: center;
+    gap: 10px;
+}

@@ -7,7 +7,7 @@
     font-size: 18px;
     font-family: 'Alan Sans', sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 200;
     font-style: normal;
 }
 #root {
@@ -19,9 +19,19 @@
     background-color: #456882;
 }
 .content {
+    display: flex;
     width: 1200px;
     margin: 0 auto;
 }
 .main {
-    height: calc(100vh - 60px - 60px);
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    height: calc(100vh - 60px - 70px);
+}
+.content > .main {
+    margin-top: 10px;
+}
+.active {
+    font-weight: 400;
 }

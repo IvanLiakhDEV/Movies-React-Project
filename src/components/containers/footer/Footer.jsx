@@ -5,19 +5,17 @@ export const Footer = () => {
     return (
         <div className='container'>
             <div className={`content`}>
-                <div className={style.github}>
-                    <a
-                        className={style.github}
-                        href='https://www.youtube.com/'
-                        target='_blank'
-                        rel='noopener noreferrer'>
-                        <img
-                            src={github}
-                            width={50}
-                        />
-                        Repository
-                    </a>
-                </div>
+                <a
+                    className={style.githubHref}
+                    href='https://www.youtube.com/'
+                    target='_blank'
+                    rel='noopener noreferrer'>
+                    <img
+                        src={github}
+                        width={50}
+                    />
+                    Repository
+                </a>
             </div>
         </div>
     );

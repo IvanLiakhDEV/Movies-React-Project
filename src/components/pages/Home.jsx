@@ -1,4 +1,10 @@
 import React from 'react';
+import { SearchForm } from '../forms/SearchForm';
 export const Home = () => {
-    return <>Hello from Home</>;
+    return (
+        <>
+            <SearchForm />
+            Hello from Home
+        </>
+    );
 };

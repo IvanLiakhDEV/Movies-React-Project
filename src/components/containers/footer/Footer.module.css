@@ -1,7 +1,7 @@
-.github {
+.githubHref {
     display: flex;
-    justify-content: end;
     align-items: center;
     line-height: 60px;
     gap: 5px;
+    margin-left: auto;
 }
